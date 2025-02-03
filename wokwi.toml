@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 [wokwi]
 version = 1
 firmware = 'build/ws2812.uf2'
+=======
+[wokwi]
+version = 1
+firmware = 'build/ws2812.uf2'
+>>>>>>> 7e52224 (first commit)
 elf = 'build/ws2812.elf'

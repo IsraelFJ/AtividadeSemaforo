@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 1,
   "author": "Israel Falcão Jesus",
@@ -55,4 +56,63 @@
     [ "led3:C", "pico:GND.2", "green", [ "v0", "h-57.2", "v-172.8", "h288", "v124.8" ] ]
   ],
   "dependencies": {}
+=======
+{
+  "version": 1,
+  "author": "Israel Falcão Jesus",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": -147.25, "left": 70.75, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -176.4,
+      "left": -245.8,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led2", "top": 6, "left": -245.8, "attrs": { "color": "green" } },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -70.8,
+      "left": -245.8,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 51.95,
+      "left": -105.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -24.85,
+      "left": -105.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -120.85,
+      "left": -96,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "led1:A", "r3:1", "green", [ "v0" ] ],
+    [ "r1:2", "pico:GP13", "green", [ "v0" ] ],
+    [ "r2:2", "pico:GP12", "green", [ "v28.8", "h104.4" ] ],
+    [ "r3:2", "pico:GP11", "green", [ "v115.2", "h104.4" ] ],
+    [ "led3:A", "r2:1", "green", [ "v0" ] ],
+    [ "led2:A", "r1:1", "green", [ "v0" ] ],
+    [ "led1:C", "pico:GND.2", "green", [ "v38.4", "h-57.2", "v-105.6", "h288", "v124.8" ] ],
+    [ "led2:C", "pico:GND.2", "green", [ "v19.2", "h-57.2", "v-268.8", "h288", "v134.4" ] ],
+    [ "led3:C", "pico:GND.2", "green", [ "v0", "h-57.2", "v-172.8", "h288", "v124.8" ] ]
+  ],
+  "dependencies": {}
+>>>>>>> 7e52224 (first commit)
 }
